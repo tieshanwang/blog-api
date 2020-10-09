@@ -6,7 +6,7 @@ base_dir = os.path.abspath(os.path.dirname(__file__))
 # 配置类
 class Config:
     # 开发模式
-    #DEBUG = True
+    DEBUG = True
 
     # 解决中文乱码
     JSON_AS_ASCII = False
@@ -16,7 +16,8 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # 文件上传
-    UPLOAD_FOLDER = '/var/www/html/static/blog/images'
+    #UPLOAD_FOLDER = '/var/www/html/static/blog/images'
+    UPLOAD_FOLDER = 'e:/blog-page/public/static/images'
     #UPLOAD_FOLDER = os.path.join(base_dir, 'files')
     ALLOWED_EXTENSIONS = { 'png', 'jpg', 'jpeg', 'gif' }
     MAX_CONTENT_LENGTH = 8 * 1024 * 1024
